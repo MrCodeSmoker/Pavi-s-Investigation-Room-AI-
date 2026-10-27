@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { createCase, getCase } from './Services/caseApi.js'
+import { createCase, getCase } from './services/caseApi.js'
 
 import ReactDOM from 'react-dom/client';
 
