@@ -1,0 +1,31 @@
+{
+  "name": "ai-mystery-room",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c yellow,cyan \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true,
+    "esbuild@0.25.12": true
+  },
+  "overrides": {
+    "postcss-selector-parser@6": [
+      [
+        "6.1.5"
+      ]
+    ]
+  }
+}
