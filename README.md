@@ -81,4 +81,10 @@ Open the Vercel URL, create a case, and confirm it progresses to a ready state. 
 | `UPLOAD_DIR` | API | Optional upload directory. |
 | `VITE_API_BASE_URL` | Frontend | API origin, without `/api/v1`. |
 
-Do not commit `.env` files or deploy credentials in frontend variables. If a credential has been exposed, revoke or rotate it before deployment.
+Do not commit `.env` files or deploy credentials in frontend variables. If a credential has been exposed, revoke or rotate it before deployment. 
+ 
+
+## Deployment update
+
+Triggering a fresh Vercel deployment.
+
